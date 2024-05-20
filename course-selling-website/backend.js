@@ -81,7 +81,7 @@ app.get('/admin/courses',adminAuthentication, (req, res) => {
   }
 });
 
-// User routes
+// User routes ->
 app.post('/users/signup', (req, res) => {
   const users = req.body;
   const existingUser = USERS.find(a => a.username === users.username);
